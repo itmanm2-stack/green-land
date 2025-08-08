@@ -1,0 +1,167 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>شرکت مهندسی مشاور سرزمین سبز پایدار</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: "Tahoma", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #0a0;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #050;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #0f0;
+    }
+    .activity, .project {
+      margin-bottom: 30px;
+    }
+    .activity img, .project img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #0f0;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #222;
+      color: #0f0;
+    }
+    input[type="submit"] {
+      background-color: #0a0;
+      color: white;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(s => s.classList.add("hidden"));
+      document.getElementById(id).classList.remove("hidden");
+    }
+    window.onload = () => showSection("home");
+  </script>
+</head>
+<body>
+  <header>
+    <h1>شرکت مهندسی مشاور سرزمین سبز پایدار</h1>
+    <p>رتبه ۳ در حوزه‌های تخصصی</p>
+  </header>
+
+  <nav>
+    <a onclick="showSection('home')">صفحه اصلی</a>
+    <a onclick="showSection('contact')">تماس با ما</a>
+    <a onclick="showSection('project')">پروژه‌ها</a>
+  </nav>
+
+  <!-- صفحه اصلی -->
+  <section id="home">
+    <h2>زمینه‌های فعالیت</h2>
+
+    <div class="activity">
+      <h3>آبیاری و زهکشی</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Irrigation_ditch.jpg" alt="آبیاری و زهکشی">
+    </div>
+
+    <div class="activity">
+      <h3>آب و فاضلاب</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Sewage_treatment_plant.jpg" alt="آب و فاضلاب">
+    </div>
+
+    <div class="activity">
+      <h3>کشاورزی نوین</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Precision_agriculture.jpg" alt="کشاورزی نوین">
+    </div>
+
+    <div class="activity">
+      <h3>آبیاری تحت فشار</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Drip_irrigation_system.jpg" alt="آبیاری تحت فشار">
+    </div>
+
+    <h2>مدیرعامل</h2>
+    <p><strong>مسلم عارف‌پور</strong></p>
+  </section>
+
+  <!-- فرم تماس -->
+  <section id="contact" class="hidden">
+    <h2>فرم ارتباط با ما</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">نام:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">ایمیل:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">پیام:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="ارسال">
+    </form>
+    <p style="text-align:center; margin-top:10px;">پیام شما به ایمیل شرکت ارسال خواهد شد.</p>
+  </section>
+
+  <!-- پروژه‌ها -->
+  <section id="project" class="hidden">
+    <h2>پروژه‌های جمع‌آوری آب‌های سطحی</h2>
+    <div class="project">
+      <p>طراحی و نظارت بر پروژه‌های جمع‌آوری آب‌های سطحی استان خوزستان شامل تحلیل رواناب، طراحی شبکه‌های دفع، اجرای حوضچه‌های آرامش و بهسازی مناطق شهری است. این پروژه‌ها با هدف کاهش خسارات ناشی از سیلاب، بهبود منظر شهری و ارتقاء کیفیت زندگی اجرا می‌شوند.</p>
+      <ul>
+        <li>تحلیل بارش‌های شدید و پیش‌بینی حجم رواناب</li>
+        <li>طراحی جوی‌ها، کانال‌ها و حوضچه‌های آرامش با استفاده از نشریات فنی</li>
+        <li>مطالعه محله‌های آسیب‌پذیر مانند لشکرآباد اهواز</li>
+        <li>نظارت بر اجرا با کنترل شیب، مصالح و کیفیت عملکرد</li>
+        <li>رعایت اصول توسعه پایدار و حفظ منابع آب</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>شماره تماس: 06133365637</p>
+    <p>آدرس: اهواز، امانیه، خیابان منصفی، بین عارف و لقمان، پلاک ۱۹</p>
+    <p>© تمامی حقوق محفوظ است - سرزمین سبز پایدار</p>
+  </footer>
+</body>
+</html>
